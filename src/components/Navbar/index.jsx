@@ -40,7 +40,7 @@ const Navbar = () => {
                   />
                 </button>
 
-                <a href="/home">
+                <a href="/">
                   <img
                     src={logoDarkImg}
                     height={40}
