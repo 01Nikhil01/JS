@@ -75,20 +75,20 @@ const OfferAdBanner = () => {
           </div>
           <h5 className="text-center text-sm text-primary-50">
             Free Delivery Over {currentCurrency}50{" "}
-            <Link to="" className="font-semibold underline">
+            <a href="" className="font-semibold underline">
               Claim Offer
-            </Link>
+            </a>
           </h5>
           <ul className="flex items-center justify-end gap-4">
             <li className="menu-item flex">
-              <Link className="text-sm hover:text-primary" to="/faqs">
+              <a className="text-sm hover:text-primary" href="/faqs">
                 Help
-              </Link>
+              </a>
             </li>
             <li className="menu-item flex">
-              <Link className="text-sm hover:text-primary" to="/contact-us">
+              <a className="text-sm hover:text-primary" href="/contact-us">
                 Contact Us
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

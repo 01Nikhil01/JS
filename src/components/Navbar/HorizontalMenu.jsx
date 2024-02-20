@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 import { Fragment, useCallback, useEffect, useState } from "react";
 import { LuChevronDown } from "react-icons/lu";
 import { findAllParent, findMenuItem, getMenuItemFromURL } from "@/helpers";
@@ -82,21 +82,21 @@ const MenuItem = ({ item, className, linkClassName }) => {
 
 const MenuItemLink = ({ item, className }) => {
   return (
-    <Link
+    <a
       className={className}
-      to={item.url ?? ""}
+      href={item.url ?? ""}
       target={item.target}
       data-menu-key={item.key}
     >
       {item.label}
-    </Link>
+    </a>
   );
 };
 
 const HorizontalMenu = ({ menuItems }) => {
   const [activeMenuItems, setActiveMenuItems] = useState([]);
 
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
 
   const toggleMenu = (menuItem, show) => {
     if (show) {
@@ -110,9 +110,9 @@ const HorizontalMenu = ({ menuItems }) => {
    * activate the menuitems
    */
   const activeMenu = useCallback(() => {
-    const trimmedURL = pathname.replaceAll("", "");
+    // const trimmedURL = pathname.replaceAll("", "");
 
-    const matchingMenuItem = getMenuItemFromURL(menuItems, trimmedURL);
+    const matchingMenuItem = getMenuItemFromURL(menuItems);
 
     if (matchingMenuItem) {
       const activeMt = findMenuItem(menuItems, matchingMenuItem.key);
@@ -123,7 +123,7 @@ const HorizontalMenu = ({ menuItems }) => {
         ]);
       }
     }
-  }, [pathname, menuItems]);
+  }, [menuItems]);
 
   useEffect(() => {
     if (menuItems && menuItems.length > 0) activeMenu();
