@@ -2,7 +2,6 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { LuArrowRight, LuMail } from "react-icons/lu";
-// import { TextFormInput } from "./index";
 
 const SubscribeToMail = () => {
   const subscribeSchema = yup.object({
@@ -29,15 +28,14 @@ const SubscribeToMail = () => {
                 Subscribe
               </label>
               <div className="flex rounded-md shadow-sm">
-                {/* <TextFormInput
+                <input
                   name="email"
                   className="form-input  bg-white"
                   control={control}
                   placeholder="Email address"
                   endButtonIcon={<LuArrowRight size={20} />}
                   startInnerIcon={<LuMail size={20} />}
-                  fullWidth
-                /> */}
+                />
               </div>
             </form>
             <p className="mb-6 text-sm text-default-500">

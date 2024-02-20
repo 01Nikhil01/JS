@@ -102,7 +102,7 @@ const HorizontalMenu = ({ menuItems }) => {
     if (show) {
       setActiveMenuItems([
         menuItem["key"],
-        // ...findAllParent(menuItems, menuItem),
+        ...findAllParent(menuItems, menuItem),
       ]);
     }
   };
