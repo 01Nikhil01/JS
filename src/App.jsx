@@ -1,15 +1,18 @@
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar";
+import ProductsGrid from "./page/page";
+import AppProvidersWrapper from "./components/AppProvidersWrapper";
 
 export default function App() {
   return (
-    <div className="flex flex-col">
-      <Navbar />
-      <div className="flex-grow">
-      {/* add component */}
-      
+    <AppProvidersWrapper>
+      <div className="flex flex-col">
+        <Navbar />
+        <div className="flex-grow">
+          <ProductsGrid />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </AppProvidersWrapper>
   );
 }
