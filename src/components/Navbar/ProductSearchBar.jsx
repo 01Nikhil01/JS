@@ -1,5 +1,4 @@
 import { lazy } from "react";
-// import { useSearchParams } from "react-router-dom";
 import { createPortal } from "react-dom";
 import { LuSearch } from "react-icons/lu";
 // import { useFilterContext } from "@/context";

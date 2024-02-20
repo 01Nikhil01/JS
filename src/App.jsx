@@ -5,14 +5,17 @@ import ShopProvider from "./context/useShoppingContext";
 
 export default function App() {
   return (
-    <div className="flex flex-col">
-     <ShopProvider >
-     <Navbar />
+    < >
+     <ShopProvider>
+    <div className="flex flex-col w-full">
+    <Navbar />
       <div className="flex-grow">
         <Cart />
       </div>
       <Footer />
-     </ShopProvider>
     </div>
+     </ShopProvider>
+    </>
+   
   );
 }
