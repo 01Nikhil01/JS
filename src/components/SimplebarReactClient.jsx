@@ -1,7 +1,7 @@
-// import SimpleBar from "simplebar-react";
+import SimpleBar from "simplebar-react";
 
-// const SimplebarReactClient = ({ children, ...options }) => {
-//   return <SimpleBar {...options}>{children}</SimpleBar>;
-// };
+const SimplebarReactClient = ({ children, ...options }) => {
+  return <SimpleBar {...options}>{children}</SimpleBar>;
+};
 
-// export default SimplebarReactClient;
+export default SimplebarReactClient;
