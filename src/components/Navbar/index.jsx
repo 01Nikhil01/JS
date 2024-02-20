@@ -16,7 +16,6 @@ import { logoDarkImg, logoLightImg } from "@/assets/data/images";
 import { getClientVerticalMenuItems, getHorizontalMenuItems } from "@/helpers";
 import ProductSearchBar from "./ProductSearchBar";
 import CartAndWishList from "./CartAndWishList";
-// import { Link } from "react-router-dom";
 const HorizontalMenu = lazy(() => import("./HorizontalMenu"));
 const StickyHeader = lazy(() => import("./StickyHeader"));
 
