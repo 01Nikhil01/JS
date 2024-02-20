@@ -1,21 +1,13 @@
-import { Toaster } from "sonner";
-import { AppProvidersWrapper, BackToTop } from "./components";
-import AllRoutes from "./routes/Routes";
-import { configureFakeBackend } from "@/common";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar";
 
-// styles
-import "@/assets/css/style.css";
-
-configureFakeBackend();
-
-const App = () => {
+export default function App() {
   return (
-    <AppProvidersWrapper>
-      <AllRoutes />
-      <BackToTop />
-      <Toaster richColors />
-    </AppProvidersWrapper>
-  );
-};
+    <>
+      <Navbar />
+      {/* add component */}
 
-export default App;
+      <Footer />
+    </>
+  );
+}
