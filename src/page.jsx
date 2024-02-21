@@ -1,11 +1,9 @@
-// import { Link } from "react-router-dom";
-// import { AuthFormLayout, PageTitle } from "@/components";
+import AuthFormLayout from "./components/AuthFormLayout";
+import PageTitle from "./components/PageTitle";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { LuCopy, LuLock, LuMail, LuShield, LuUser } from "react-icons/lu";
-// import useLogin from "./useLogin";
-// import { PasswordFormInput, TextFormInput } from "@/components";
 import PasswordFormInput from "./components/PasswordFormInput";
 import TextFormInput from "./components/TextFormInput";
 
@@ -118,12 +116,10 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
-
 const BottomLink = () => (
   <p className="mt-auto text-center text-default-950">
     Don’t have an account ?{" "}
-    <a href="/auth/register" className="ms-1 text-primary">
+    <a href="/" className="ms-1 text-primary">
       <span className="font-medium">Register</span>
     </a>
   </p>
@@ -142,3 +138,5 @@ const Login = () => {
     </AuthFormLayout>
   );
 };
+
+export default Login;
