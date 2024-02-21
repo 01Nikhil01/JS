@@ -132,7 +132,7 @@ const VerticalMenu = ({ menuItems }) => {
 
   useEffect(() => {
     if (menuItems && menuItems.length > 0) activeMenu();
-  }, [activeMenu, menuItems]);
+  }, []);
 
   return (
     <ul className="space-y-2.5">
