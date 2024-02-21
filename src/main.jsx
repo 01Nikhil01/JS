@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
-import App from "./App";
-import './assets/css/style.css'
+import Error404 from "./error";
+import "./assets/css/style.css";
 
 const container = document.getElementById("root");
 if (container) {
   const root = createRoot(container);
-  root.render(<App />);
+  root.render(<Error404 />);
 }
