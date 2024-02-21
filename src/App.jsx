@@ -1,14 +1,17 @@
 // styles
 import "@/assets/css/style.css";
-import MenuAdmin from "./Components/Navbar";
-import TopbarAdmin from "./Components/TopbarAdmin";
+import AdminLayout from "./layouts/AdminLayout";
+import BackToTop from "./layouts/BackToTop";
+import { LayoutProvider } from "./context/useLayoutContext";
 
 const App = () => {
   return (
-    <>
-      <TopbarAdmin />
-      <MenuAdmin />
-    </>
+    <LayoutProvider>
+      <AdminLayout>
+        <BackToTop />
+        {/* component */}
+      </AdminLayout>
+    </LayoutProvider>
   );
 };
 

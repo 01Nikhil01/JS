@@ -1,23 +1,19 @@
 import { Suspense } from "react";
-import { Footer, Preloader } from "@/components";
-import { Topbar, Navbar } from "@/components/layout/admin";
+import TopbarAdmin from "../Components/TopbarAdmin";
+import Navbar from "../Components/Navbar";
 
 const AdminLayout = ({ children }) => {
   return (
     <Suspense>
       <Suspense>
-        <Topbar />
+        <TopbarAdmin />
       </Suspense>
 
       <Suspense>
         <Navbar />
       </Suspense>
 
-      <Suspense fallback={<Preloader />}>{children}</Suspense>
-
-      <Suspense>
-        <Footer hideLinks />
-      </Suspense>
+      <Suspense>{children}</Suspense>
     </Suspense>
   );
 };

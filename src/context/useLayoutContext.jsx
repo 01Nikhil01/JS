@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useMemo, useEffect } from "react";
 
 const LayoutContext = createContext(undefined);
 
-function useLayoutContext() {
+export function useLayoutContext() {
   const context = useContext(LayoutContext);
   if (context === undefined) {
     throw new Error("useLayoutContext must be used within an LayoutProvider");
@@ -10,7 +10,7 @@ function useLayoutContext() {
   return context;
 }
 
-function LayoutProvider({ children }) {
+export function LayoutProvider({ children }) {
   const INIT_STATE = {
     theme: "light",
   };
@@ -54,5 +54,3 @@ function LayoutProvider({ children }) {
     </LayoutContext.Provider>
   );
 }
-
-export { useLayoutContext, LayoutProvider };
