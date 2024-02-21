@@ -8,7 +8,7 @@ import { notificationsData } from "@/assets/data";
 
 const TopbarAdmin = () => {
   return (
-    <header className="sticky top-0 z-40 flex h-18 w-full border-b border-default-200 bg-white dark:bg-default-50 lg:ps-64 hide-in-print">
+    <header className="sticky top-0 p-5 z-40 flex h-18 w-full border-b border-default-200 bg-white dark:bg-default-50 lg:ps-64 hide-in-print">
       <nav className="flex w-full items-center gap-4 px-6">
         <div className="flex lg:hidden">
           <button
