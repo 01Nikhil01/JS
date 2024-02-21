@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom";
 import { LuAlignJustify, LuSearch } from "react-icons/lu";
 import MaximizeScreen from "./MaximizeScreen";
-import LanguageDropdown from "./LanguageDropdown";
 import ProfileDropdown from "./ProfileDropdown";
 import NotificationDropdown from "./NotificationDropdown";
 import { logoDarkImg, logoLightImg } from "@/assets/data/images";
 import { notificationsData } from "@/assets/data";
+import LanguageDropdown from "./LanguageDropdown";
 
 const TopbarAdmin = () => {
   return (
-    <header className="sticky top-0 z-40 flex h-18 w-full border-b border-default-200 bg-white dark:bg-default-50 lg:ps-64 hide-in-print">
+    <header className="sticky top-0 z-40 p-5 flex h-18 w-full border-b border-default-200 bg-white dark:bg-default-50 lg:ps-64 hide-in-print">
       <nav className="flex w-full items-center gap-4 px-6">
         <div className="flex lg:hidden">
           <button
@@ -24,7 +23,7 @@ const TopbarAdmin = () => {
         </div>
 
         <div className="flex lg:hidden">
-          <Link to="/home">
+          <a href="/home">
             <img
               src={logoDarkImg}
               height={40}
@@ -39,7 +38,7 @@ const TopbarAdmin = () => {
               alt="logo"
               className="hidden h-10 w-full dark:flex"
             />
-          </Link>
+          </a>
         </div>
 
         <div className="hidden lg:flex">

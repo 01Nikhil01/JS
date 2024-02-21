@@ -1,4 +1,3 @@
-import { Link, useLocation } from "react-router-dom";
 import { Fragment, useCallback, useEffect, useState } from "react";
 import { LuChevronDown, LuDot, LuLayoutGrid } from "react-icons/lu";
 import { findAllParent, findMenuItem, getMenuItemFromURL } from "@/helpers";
@@ -93,15 +92,15 @@ const MenuItem = ({ item, className, linkClassName }) => {
 const MenuItemLink = ({ item, className }) => {
   const Icon = item.icon ?? LuDot;
   return (
-    <Link
+    <a
       className={className}
-      to={item.url ?? ""}
+      href={item.url ?? ""}
       target={item.target}
       data-menu-key={item.key}
     >
       <Icon size={item.icon ? 20 : 24} />
       {item.label}
-    </Link>
+    </a>
   );
 };
 
@@ -111,7 +110,7 @@ const MenuItemLink = ({ item, className }) => {
 const VerticalMenu = ({ menuItems }) => {
   const [activeMenuItems, setActiveMenuItems] = useState([]);
 
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
 
   const toggleMenu = (menuItem, show) => {
     if (show) {
@@ -125,9 +124,9 @@ const VerticalMenu = ({ menuItems }) => {
    * activate the menuitems
    */
   const activeMenu = useCallback(() => {
-    const trimmedURL = pathname.replaceAll("", "");
+    // const trimmedURL = pathname.replaceAll("", "");
 
-    const matchingMenuItem = getMenuItemFromURL(menuItems, trimmedURL);
+    const matchingMenuItem = getMenuItemFromURL(menuItems);
 
     if (matchingMenuItem) {
       const activeMt = findMenuItem(menuItems, matchingMenuItem.key);
@@ -138,11 +137,11 @@ const VerticalMenu = ({ menuItems }) => {
         ]);
       }
     }
-  }, [pathname, menuItems]);
+  }, [menuItems]);
 
   useEffect(() => {
     if (menuItems && menuItems.length > 0) activeMenu();
-  }, [activeMenu, menuItems]);
+  }, []);
 
   return (
     <ul className="admin-menu hs-accordion-group flex w-full flex-col gap-1.5 p-4">

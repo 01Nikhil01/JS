@@ -1,14 +1,18 @@
 // styles
 import "@/assets/css/style.css";
 import MenuAdmin from "./Components/Navbar";
-import TopbarAdmin from "./Components/TopbarAdmin";
+import Dashboard from "./components/dashboard/page";
+import TopbarAdmin from './components/TopbarAdmin/index'
 
 const App = () => {
   return (
-    <>
-      <TopbarAdmin />
+    <div className="flex h-screen w-screen">
       <MenuAdmin />
-    </>
+      <div className="flex flex-col flex-grow">
+        <TopbarAdmin />
+        <div className="overflow-y-auto"> <Dashboard /></div>
+      </div>
+    </div>
   );
 };
 
