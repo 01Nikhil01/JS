@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Fragment } from "react";
 import { LuBell } from "react-icons/lu";
 import SimplebarReactClient from "../SimplebarReactClient";
@@ -67,9 +66,9 @@ const NotificationDropdown = ({ notifications }) => {
       <div className="hs-dropdown-menu duration mt-2 hidden min-w-[20rem] rounded-lg border border-default-200 bg-white opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 dark:bg-default-50">
         <div className="flex items-center justify-between px-4 py-2">
           <h6 className="text-sm font-medium"> Notification</h6>
-          <Link to="" className="text-default-500">
+          <a href="" className="text-default-500">
             <small>Clear All</small>
-          </Link>
+          </a>
         </div>
 
         <SimplebarReactClient className="h-80 border-y border-dashed border-default-200 p-4">
@@ -89,7 +88,7 @@ const NotificationDropdown = ({ notifications }) => {
               return (
                 <Fragment key={idx}>
                   <h5 className="mb-2 text-xs text-default-700">{labelName}</h5>
-                  <Link to="" className="mb-4 flex items-center">
+                  <a href="" className="mb-4 flex items-center">
                     <img
                       src={notification.avatar}
                       alt="avatar"
@@ -108,12 +107,12 @@ const NotificationDropdown = ({ notifications }) => {
                         {notification.subText}
                       </small>
                     </div>
-                  </Link>
+                  </a>
                 </Fragment>
               );
             } else {
               return (
-                <Link to="" key={idx} className="mb-4 flex items-center">
+                <a href="" key={idx} className="mb-4 flex items-center">
                   <div className="flex-shrink-0">
                     <img
                       src={notification.avatar}
@@ -136,18 +135,18 @@ const NotificationDropdown = ({ notifications }) => {
                       {notification.subText}
                     </small>
                   </div>
-                </Link>
+                </a>
               );
             }
           })}
         </SimplebarReactClient>
 
-        <Link
-          to=""
+        <a
+          href=""
           className="block px-4 py-2 text-center text-sm font-medium text-primary"
         >
           View All
-        </Link>
+        </a>
       </div>
     </div>
   );
