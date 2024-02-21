@@ -5,10 +5,15 @@ import TopbarAdmin from "./Components/TopbarAdmin";
 
 const App = () => {
   return (
-    <>
+    <div className="flex h-screen w-screen">
+    <MenuAdmin />
+    <div className="flex flex-col flex-grow">
       <TopbarAdmin />
-      <MenuAdmin />
-    </>
+      <div className="overflow-y-auto">
+        {/* write your Component */}
+      </div>
+    </div>
+  </div>
   );
 };
 
