@@ -34,7 +34,7 @@ const MenuItemLink = ({ item }) => {
       // style={({ isActive }) => {
       //   return { color: isActive && item.url ? "green" : "blue" };
       // }}
-      to="/#"
+      to="#"
       target={item.target}
       data-menu-key={item.key}
       end
