@@ -63,7 +63,7 @@ const Dashboard = () => {
                   Category
                 </h3>
                 <a
-                  href="/dishes"
+                  href="#"
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-500"
                 >
                   View all <LuChevronRight size={20} />
@@ -99,7 +99,7 @@ const Dashboard = () => {
                   Best Selling Products
                 </h3>
                 <a
-                  href="/dishes"
+                  href="#"
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-500"
                 >
                   View all <LuChevronRight size={20} />
