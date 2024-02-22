@@ -28,10 +28,11 @@ const MenuItemLink = ({ item }) => {
   return (
     <NavLink
       className={cn(
-        "flex items-center gap-x-3.5 py-3 px-4 text-sm text-default-700 rounded-md hover:bg-default-100 group-[.active]:bg-primary/10",
-        { " group-[.active]:text-primary": isActive }
+        "flex items-center gap-x-3.5 py-3 px-4 text-sm text-default-700 rounded-md hover:bg-default-100 group-[.active]:bg-primary/10"
+        // { "bg-red-400": isActive }
       )}
-      to="#"
+      // style={(isActive) => ({ color: isActive ? "green" : "blue" })}
+      to={item.url}
       target={item.target}
       data-menu-key={item.key}
     >
@@ -55,8 +56,8 @@ function MenuItemWithChildren({ item }) {
       </div>
       {toggle && (
         <ul>
-          {item.children.map((child) => (
-            <MenuItemLink item={child} />
+          {item.children.map((child, index) => (
+            <MenuItemLink item={child} key={index} />
           ))}
         </ul>
       )}
