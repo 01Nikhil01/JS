@@ -2,7 +2,7 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { LuCalendarDays } from "react-icons/lu";
-import { DateFormInput } from "./";
+import  DateFormInput  from "./DateFormInput";
 
 const DateRangeFilter = () => {
   const dateFilterSchema = yup.object({

@@ -14,7 +14,7 @@ const BreadcrumbAdmin = ({ title, subtitle, link }) => {
         >
           <li className="text-sm">
             <Link
-              to={link ?? ""}
+              to="#"
               className="flex items-center gap-2 align-middle text-default-800 transition-all hover:text-primary-500"
             >
               {subtitle}

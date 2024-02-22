@@ -8,9 +8,9 @@ const App = () => {
   return (
     <div className="flex h-screen w-screen">
     <MenuAdmin />
-    <div className="flex flex-col flex-grow">
+    <div className="flex flex-col flex-grow w-full">
       <TopbarAdmin />
-      <div className="overflow-y-auto">
+      <div className="overflow-y-auto w-full">
         <CustomersList />
       </div>
     </div>

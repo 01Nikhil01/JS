@@ -2,7 +2,7 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { LuSearch } from "react-icons/lu";
-import { TextFormInput } from "./TextFormInput";
+import  TextFormInput  from "./TextFormInput";
 
 const TableSearchBox = () => {
   const searchFilterSchema = yup.object({

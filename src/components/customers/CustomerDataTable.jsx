@@ -17,7 +17,7 @@ const CustomerDataTable = ({
   buttonText,
 }) => {
   return (
-    <div className="rounded-lg border border-default-200">
+    <div className="rounded-lg border border-default-200 ">
       <div className="border-b border-b-default-200 px-6 py-4">
         <div className="flex flex-wrap items-center justify-between gap-6">
           <h2 className="text-xl font-medium text-default-900">{title}</h2>
