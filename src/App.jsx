@@ -2,6 +2,7 @@
 import "@/assets/css/style.css";
 import MenuAdmin from "./Components/Navbar";
 import TopbarAdmin from "./Components/TopbarAdmin";
+import CustomersList from "./components/customers/CustomersList";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
     <div className="flex flex-col flex-grow">
       <TopbarAdmin />
       <div className="overflow-y-auto">
-        {/* write your Component */}
+        <CustomersList />
       </div>
     </div>
   </div>
