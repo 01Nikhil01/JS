@@ -22,7 +22,6 @@ const getHorizontalMenuItems = () => {
 const findAllParent = (menuItems, menuItem) => {
   let parents = [];
   const parent = findMenuItem(menuItems, menuItem.parentKey);
-
   if (parent) {
     parents.push(parent.key);
     if (parent.parentKey) {

@@ -1,6 +1,6 @@
 // styles
 import "@/assets/css/style.css";
-import MenuAdmin from "./Components/Navbar";
+import MenuAdmin from "./components/Navbar";
 import Dashboard from "./components/dashboard/page";
 import TopbarAdmin from './components/TopbarAdmin/index'
 

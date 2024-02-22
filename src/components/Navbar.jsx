@@ -15,7 +15,7 @@ const MenuAdmin = () => {
       className="hs-overlay fixed inset-y-0 start-0 z-[60] hidden w-64 -translate-x-full transform overflow-y-auto border-e border-default-200 bg-white transition-all duration-300 hs-overlay-open:translate-x-0 dark:bg-default-50 lg:bottom-0 lg:right-auto lg:block lg:translate-x-0 hide-in-print"
     >
       <div className="sticky top-0 flex h-18 items-center justify-center border-b border-dashed border-default-200 px-6">
-        <a href="/home">
+        <a to="#">
           <img
             src={logoDarkImg}
             height={40}
