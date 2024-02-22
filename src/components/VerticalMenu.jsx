@@ -29,12 +29,15 @@ const MenuItemLink = ({ item }) => {
     <NavLink
       className={cn(
         "flex items-center gap-x-3.5 py-3 px-4 text-sm text-default-700 rounded-md hover:bg-default-100 group-[.active]:bg-primary/10"
-        // { "bg-red-400": isActive }
+        // { "bg-red-400": { isActive } && item.url }
       )}
-      // style={(isActive) => ({ color: isActive ? "green" : "blue" })}
-      to={item.url}
+      // style={({ isActive }) => {
+      //   return { color: isActive && item.url ? "green" : "blue" };
+      // }}
+      to="/#"
       target={item.target}
       data-menu-key={item.key}
+      end
     >
       <Icon size={item.icon ? 20 : 24} />
       {item.label}
