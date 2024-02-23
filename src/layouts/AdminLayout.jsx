@@ -1,24 +1,17 @@
-import { Suspense } from "react";
-import { Footer, Preloader } from "@/components";
 import { Topbar, Navbar } from "@/components/layout/admin";
 
 const AdminLayout = ({ children }) => {
   return (
-    <Suspense>
-      <Suspense>
-        <Topbar />
-      </Suspense>
 
-      <Suspense>
+    <div className="h-screen w-screen">
+      <Topbar />
+      <div className="flex flex-col">
         <Navbar />
-      </Suspense>
-
-      <Suspense fallback={<Preloader />}>{children}</Suspense>
-
-      <Suspense>
-        <Footer hideLinks />
-      </Suspense>
-    </Suspense>
+        <div className=" w-full">
+          {/* add component here */}
+        </div>
+      </div>
+    </div>
   );
 };
 

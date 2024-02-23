@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 import SimplebarReactClient from "../../SimplebarReactClient";
 import { LuLogOut, LuUserCircle2, LuZap } from "react-icons/lu";
-import {
-  logoDarkImg,
-  logoLightImg,
-  offerBgOtherImg,
-} from "@/assets/data/images";
+import { logoDarkImg } from "../../../assets/data";
+import { logoLightImg } from "../../../assets/data";
 import VerticalMenu from "./VerticalMenu";
 import { getAdminVerticalMenuItems } from "@/helpers";
 
@@ -34,27 +31,11 @@ const MenuAdmin = () => {
         </Link>
       </div>
 
-      <SimplebarReactClient className="h-[calc(100%-390px)]">
+      <SimplebarReactClient className="">
         <VerticalMenu menuItems={getAdminVerticalMenuItems()} />
       </SimplebarReactClient>
 
       <ul className="admin-menu flex flex-col gap-2 px-4 pt-10">
-        <li className="menu-item">
-          <div
-            style={{ backgroundImage: `url(${offerBgOtherImg})` }}
-            className="flex flex-col items-center rounded-md bg-primary/5 bg-cover bg-no-repeat p-4 text-center text-sm text-default-700"
-          >
-            <div className="-mt-10 mb-4 flex h-16 w-16 items-center justify-center rounded-full border border-default-100 bg-white text-primary shadow-lg dark:bg-default-50">
-              <LuZap size={24} />
-            </div>
-            <p className="mb-4 text-sm text-default-700">
-              🔥 Upgrade Your Plan. Find Out here
-            </p>
-            <button className="rounded bg-primary/10 px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-white">
-              Contact Support
-            </button>
-          </div>
-        </li>
 
         <li className="menu-item">
           <Link

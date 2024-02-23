@@ -1,6 +1,6 @@
 import { useEffect, lazy } from "react";
 import { HelmetProvider } from "react-helmet-async";
-import { AuthProvider, FilterProvider, LayoutProvider } from "@/context";
+import {LayoutProvider } from "@/context";
 const ShopProvider = lazy(() => import("@/context/useShoppingContext"));
 
 const AppProvidersWrapper = ({ children }) => {
@@ -23,11 +23,9 @@ const AppProvidersWrapper = ({ children }) => {
   return (
     <HelmetProvider>
       <LayoutProvider>
-        <AuthProvider>
           <ShopProvider>
-            <FilterProvider>{children}</FilterProvider>
+          {children}
           </ShopProvider>
-        </AuthProvider>
       </LayoutProvider>
     </HelmetProvider>
   );

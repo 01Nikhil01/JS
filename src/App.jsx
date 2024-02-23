@@ -1,19 +1,16 @@
-import { Toaster } from "sonner";
-import { AppProvidersWrapper, BackToTop } from "./components";
-import AllRoutes from "./routes/Routes";
+import { AppProvidersWrapper} from "./components";
 import { configureFakeBackend } from "@/common";
-
-// styles
 import "@/assets/css/style.css";
+import BackToTop from "./components/layout/BackToTop";
+import { AdminLayout } from "./layouts";
 
 configureFakeBackend();
 
 const App = () => {
   return (
     <AppProvidersWrapper>
-      <AllRoutes />
+      <AdminLayout />
       <BackToTop />
-      <Toaster richColors />
     </AppProvidersWrapper>
   );
 };

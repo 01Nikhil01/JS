@@ -19,13 +19,13 @@ File: style Css File
 @import "custom/_data-table.css";
 
 /* Custom Plugin css */
-@import "custom/_scrollbar.css";
-@import "custom/_swiper.css";
+/* @import "custom/_scrollbar.css"; */
+/* @import "custom/_swiper.css"; */
 @import "custom/_simplebar.css";
-@import "custom/_flatpickr.css";
-@import "custom/_quill.css";
-@import "custom/_filepond.css";
-@import "custom/_react-select.css";
+/* @import "custom/_flatpickr.css"; */
+/* @import "custom/_quill.css"; */
+/* @import "custom/_filepond.css"; */
+/* @import "custom/_react-select.css"; */
 
 @tailwind base;
 @tailwind components;

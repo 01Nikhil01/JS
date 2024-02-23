@@ -4,8 +4,10 @@ import MaximizeScreen from "./MaximizeScreen";
 import LanguageDropdown from "./LanguageDropdown";
 import ProfileDropdown from "./ProfileDropdown";
 import NotificationDropdown from "./NotificationDropdown";
-import { logoDarkImg, logoLightImg } from "@/assets/data/images";
+import { logoDarkImg } from "../../../../assets/data";
+import { logoLightImg } from "../../../../assets/data";
 import { notificationsData } from "@/assets/data";
+// import notificationsData from "./notificationsData";
 
 const TopbarAdmin = () => {
   return (
