@@ -6,8 +6,8 @@ const container = document.getElementById("root");
 if (container) {
   const root = createRoot(container);
   root.render(
-      <BrowserRouter basename={"/yum_r/"}>
-        <App />
-      </BrowserRouter>
+    <BrowserRouter basename={"/yum_r/"}>
+      <App />
+    </BrowserRouter>
   );
 }

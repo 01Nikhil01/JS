@@ -1,13 +1,9 @@
-import {
-  ADMIN_VERTICAL_MENU_ITEMS,
-} from "@/assets/data";
-
+import { ADMIN_VERTICAL_MENU_ITEMS } from "@/assets/data";
 
 const getAdminVerticalMenuItems = () => {
   // NOTE - You can fetch from server and return here as well
   return ADMIN_VERTICAL_MENU_ITEMS;
 };
-
 
 const findAllParent = (menuItems, menuItem) => {
   let parents = [];
@@ -38,7 +34,6 @@ const getMenuItemFromURL = (items, url) => {
   }
 };
 
-
 const findMenuItem = (menuItems, menuItemKey) => {
   if (menuItems && menuItemKey) {
     for (let i = 0; i < menuItems.length; i++) {
@@ -56,5 +51,5 @@ export {
   getAdminVerticalMenuItems,
   findAllParent,
   findMenuItem,
-  getMenuItemFromURL
+  getMenuItemFromURL,
 };
