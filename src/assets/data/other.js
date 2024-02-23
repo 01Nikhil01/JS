@@ -7,7 +7,6 @@ import {
 } from "./images";
 import { subtractHours } from "@/utils";
 
-
 export const notificationsData = [
   {
     id: 1,
