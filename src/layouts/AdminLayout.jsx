@@ -1,17 +1,23 @@
-import { Topbar, Navbar } from "@/components/layout/admin";
+import TopbarAdmin from "../components/layout/admin/TopbarAdmin";
+import  Navbar  from "../components/layout/admin/Navbar";
+import  MobileNavbar  from "../components/layout/Navbar";
 
-const AdminLayout = ({ children }) => {
+
+const AdminLayout = () => {
   return (
 
-    <div className="h-screen w-screen">
-      <Topbar />
-      <div className="flex flex-col">
-        <Navbar />
-        <div className=" w-full">
-          {/* add component here */}
+    <div className="flex h-screen w-screen">
+      <Navbar />
+      <MobileNavbar />
+      <div className="flex flex-col flex-grow">
+        <TopbarAdmin />
+        <div className="">
+          {/* add component here  */}
         </div>
       </div>
     </div>
+
+
   );
 };
 

@@ -1,6 +1,7 @@
 @import "custom/_navbar.css";
-@import "custom/_scrollbar.css";
+/* @import "custom/_scrollbar.css"; */
 @import 'custom/_simplebar.css';
+
 
 @tailwind base;
 @tailwind components;

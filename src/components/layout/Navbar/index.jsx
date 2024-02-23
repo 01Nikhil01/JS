@@ -2,7 +2,7 @@ import SimplebarReactClient from "../../SimplebarReactClient";
 import VerticalMenu from "./VerticalMenu";
 import { logoDarkImg } from "../../../assets/data";
 import { logoLightImg } from "../../../assets/data";
-import { getClientVerticalMenuItems, getHorizontalMenuItems } from "@/helpers";
+import { getAdminVerticalMenuItems } from "@/helpers";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
         <SimplebarReactClient className="">
           <nav className="hs-accordion-group flex w-full flex-col flex-wrap p-4 bg-red-300">
-            <VerticalMenu menuItems={getClientVerticalMenuItems()} />
+            <VerticalMenu menuItems={getAdminVerticalMenuItems()} />
           </nav>
         </SimplebarReactClient>
       </div>

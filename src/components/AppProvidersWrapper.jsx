@@ -1,7 +1,4 @@
 import { useEffect, lazy } from "react";
-import { HelmetProvider } from "react-helmet-async";
-import {LayoutProvider } from "@/context";
-const ShopProvider = lazy(() => import("@/context/useShoppingContext"));
 
 const AppProvidersWrapper = ({ children }) => {
   const handleChangeTitle = () => {
@@ -21,13 +18,9 @@ const AppProvidersWrapper = ({ children }) => {
   }, []);
 
   return (
-    <HelmetProvider>
-      <LayoutProvider>
-          <ShopProvider>
+    <>
           {children}
-          </ShopProvider>
-      </LayoutProvider>
-    </HelmetProvider>
+    </>
   );
 };
 export default AppProvidersWrapper;
