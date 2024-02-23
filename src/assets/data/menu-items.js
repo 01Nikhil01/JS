@@ -19,7 +19,6 @@ import {
   LuWallet,
 } from "react-icons/lu";
 
-
 export const ADMIN_VERTICAL_MENU_ITEMS = [
   {
     key: "dashboard-page",
@@ -503,6 +502,5 @@ export const ADMIN_VERTICAL_MENU_ITEMS = [
     ],
   },
 ];
-
 
 
