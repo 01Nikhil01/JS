@@ -10,7 +10,7 @@ import { notificationsData } from "@/assets/data";
 
 const TopbarAdmin = () => {
   return (
-    <header className="sticky top-0 z-40 flex h-18 w-full border-b border-default-200 bg-white dark:bg-default-50 lg:ps-64 hide-in-print">
+    <header className="sticky top-0 z-40 flex h-20 w-full border-b border-default-200 bg-white dark:bg-default-50  hide-in-print ">
       <nav className="flex w-full items-center gap-4 px-6">
         <div className="flex lg:hidden">
           <button
@@ -24,7 +24,7 @@ const TopbarAdmin = () => {
           </button>
         </div>
 
-        <div className="flex lg:hidden">
+        <div className="flex w-[237px] justify-center ">
           <Link to="/home">
             <img
               src={logoDarkImg}
