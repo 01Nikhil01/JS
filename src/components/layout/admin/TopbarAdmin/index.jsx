@@ -7,7 +7,6 @@ import NotificationDropdown from "./NotificationDropdown";
 import { logoDarkImg } from "../../../../assets/data";
 import { logoLightImg } from "../../../../assets/data";
 import { notificationsData } from "@/assets/data";
-// import notificationsData from "./notificationsData";
 
 const TopbarAdmin = () => {
   return (

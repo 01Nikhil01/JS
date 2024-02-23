@@ -135,7 +135,7 @@ const VerticalMenu = ({ menuItems }) => {
   }, [activeMenu, menuItems]);
 
   return (
-    <ul className="space-y-2.5">
+    <ul className="space-y-2.5 bg-green-400">
       {(menuItems ?? []).map((item) => {
         return (
           <Fragment key={item.key}>
