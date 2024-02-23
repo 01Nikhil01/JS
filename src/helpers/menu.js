@@ -2,20 +2,12 @@ import {
   ADMIN_VERTICAL_MENU_ITEMS,
 } from "@/assets/data";
 
-// const getClientVerticalMenuItems = () => {
-  // NOTE - You can fetch from server and return here as well
-  // return CLIENT_VERTICAL_MENU_ITEMS;
-// };
 
 const getAdminVerticalMenuItems = () => {
   // NOTE - You can fetch from server and return here as well
   return ADMIN_VERTICAL_MENU_ITEMS;
 };
 
-// const getHorizontalMenuItems = () => {
-  // NOTE - You can fetch from server and return here as well
-//   return HORIZONTAL_MENU_ITEMS;
-// };
 
 const findAllParent = (menuItems, menuItem) => {
   let parents = [];
@@ -46,18 +38,6 @@ const getMenuItemFromURL = (items, url) => {
   }
 };
 
-// flatten the list of all nested routes
-// const flattenRoutes = (routes) => {
-//   let flatRoutes = [];
-
-//   routes.forEach((item) => {
-//     flatRoutes.push(item);
-//     if (typeof item.children !== "undefined") {
-//       flatRoutes = [...flatRoutes, ...flattenRoutes(item.children)];
-//     }
-//   });
-//   return flatRoutes;
-// };
 
 const findMenuItem = (menuItems, menuItemKey) => {
   if (menuItems && menuItemKey) {
